@@ -1,6 +1,11 @@
 from test_data import *
 
 def json_search(key,input_object):
+    """
+    Search a key from JSON object
+    key: keyword to search
+    input_object: JSON object to parse
+    """
     ret_val=[]
     def inner_function(key,input_object):
         if isinstance(input_object, dict):
