@@ -5,3 +5,4 @@
  * Running on https://127.0.0.1:5000
  * Running on https://192.168.1.11:5000
 [33mPress CTRL+C to quit[0m
+127.0.0.1 - - [08/Apr/2026 07:41:55] "GET / HTTP/1.1" 200 -
