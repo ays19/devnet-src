@@ -46,3 +46,15 @@ def verify_plain(username, password):
     if not records:
         return False
     return records[0] == password
+
+@app.route('/login/v1', methods=['GET', 'POST'])
+def login_v1():
+    error = None
+    if request.method == 'POST':
+        if verify_plain(request.form['username'], request.form['password']):
+            error = 'login success'
+        else:
+            error = 'Invalid username/password'
+    else:
+        error = 'Invalid Method'
+    return error
