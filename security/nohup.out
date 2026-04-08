@@ -17,3 +17,21 @@
 127.0.0.1 - - [08/Apr/2026 07:58:27] "POST /signup/v1 HTTP/1.1" 200 -
 127.0.0.1 - - [08/Apr/2026 07:59:08] "POST /login/v1 HTTP/1.1" 200 -
 127.0.0.1 - - [08/Apr/2026 07:59:27] "POST /login/v1 HTTP/1.1" 200 -
+  File "/media/ays19/Learning/Devnet/labs/devnet-src/security/password-evolution.py", line 107
+    app.run(host='0.0.0.0', port=5000, ssl_context='adhoc')
+    ^
+IndentationError: expected an indented block after 'if' statement on line 106
+ * Serving Flask app 'password-evolution'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.1.11:5000
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [08/Apr/2026 08:38:51] "POST /signup/v2 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2026 08:41:33] "POST /signup/v2 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2026 08:43:00] "POST /signup/v2 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2026 08:43:42] "POST /login/v2 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2026 08:44:03] "POST /login/v2 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2026 08:44:26] "POST /login/v2 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2026 08:44:44] "POST /login/v2 HTTP/1.1" 200 -
