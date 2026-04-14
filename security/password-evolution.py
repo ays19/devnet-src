@@ -1,5 +1,3 @@
-from copy import error
-
 import pyotp
 import sqlite3
 import hashlib
