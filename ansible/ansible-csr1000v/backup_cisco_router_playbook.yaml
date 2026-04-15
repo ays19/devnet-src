@@ -2,13 +2,12 @@
 - name: AUTOMATIC BACKUP OF RUNNING-CONFIG
   hosts: CSR1kv
   gather_facts: false
-  connection: local
+  connection: network_cli 
 
   tasks:
     - name: DISPLAYING THE RUNNING-CONFIG
       ios_command:
         commands:
-
           - show running-config
       register: output
 
