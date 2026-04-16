@@ -1,0 +1,18 @@
+testbed:
+  name: sandbox
+
+devices:
+  cat8000v:
+    os: iosxe
+    type: router
+    credentials:
+      default:
+        username: developer
+        password: C1sco12345
+      enable:
+        password: C1sco12345
+    connections:
+      cli:
+        protocol: ssh
+        ip: 10.10.20.48
+        post: 22

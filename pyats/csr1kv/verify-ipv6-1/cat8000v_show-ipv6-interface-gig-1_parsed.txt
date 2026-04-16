@@ -1,0 +1,45 @@
+{
+  "GigabitEthernet1": {
+    "enabled": true,
+    "ipv6": {
+      "2001:DB8:ACAD:1::1/64": {
+        "ip": "2001:DB8:ACAD:1::1",
+        "prefix_length": "64",
+        "status": "valid"
+      },
+      "2001:DB8:ACAD:56::101/64": {
+        "ip": "2001:DB8:ACAD:56::101",
+        "prefix_length": "64",
+        "status": "valid"
+      },
+      "FE80::1:1": {
+        "ip": "FE80::1:1",
+        "origin": "link_layer",
+        "status": "valid"
+      },
+      "enabled": true,
+      "icmp": {
+        "error_messages_limited": 100,
+        "redirects": true,
+        "unreachables": "sent"
+      },
+      "nd": {
+        "dad_attempts": 1,
+        "dad_enabled": true,
+        "ns_retransmit_interval": 1000,
+        "reachable_time": 30000,
+        "suppress": false,
+        "using_time": 30000
+      }
+    },
+    "joined_group_addresses": [
+      "FF02::1",
+      "FF02::1:FF00:1",
+      "FF02::1:FF00:101",
+      "FF02::1:FF01:1"
+    ],
+    "mtu": 1500,
+    "oper_status": "up"
+  },
+  "_exclude": []
+}

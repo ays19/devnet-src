@@ -1,0 +1,22 @@
++++ cat8000v with via 'cli': executing command 'show ipv6 interface gig 1' +++
+show ipv6 interface gig 1
+GigabitEthernet1 is up, line protocol is up
+  IPv6 is enabled, link-local address is FE80::56:1 
+  No Virtual link-local address(es):
+  Description: IPv6 ADDRESS
+  Global unicast address(es):
+    2001:DB8:ACAD:1::1, subnet is 2001:DB8:ACAD:1::/64 
+    2001:DB8:ACAD:56::101, subnet is 2001:DB8:ACAD:56::/64 
+  Joined group address(es):
+    FF02::1
+    FF02::1:FF00:1
+    FF02::1:FF00:101
+    FF02::1:FF56:1
+  MTU is 1500 bytes
+  ICMP error messages limited to one every 100 milliseconds
+  ICMP redirects are enabled
+  ICMP unreachables are sent
+  ND DAD is enabled, number of DAD attempts: 1
+  ND reachable time is 30000 milliseconds (using 30000)
+  ND NS retransmit interval is 1000 milliseconds
+cat8000v#

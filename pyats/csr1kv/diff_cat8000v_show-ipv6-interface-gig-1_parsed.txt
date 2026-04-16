@@ -1,0 +1,15 @@
+--- verify-ipv6-1/cat8000v_show-ipv6-interface-gig-1_parsed.txt
++++ verify-ipv6-2/cat8000v_show-ipv6-interface-gig-1_parsed.txt
+ GigabitEthernet1:
+  ipv6:
+-  FE80::1:1:
+-   ip: FE80::1:1
+-   origin: link_layer
+-   status: valid
++  FE80::56:1:
++   ip: FE80::56:1
++   origin: link_layer
++   status: valid
+  joined_group_addresses:
+-  index[3]: FF02::1:FF01:1
++  index[3]: FF02::1:FF56:1
