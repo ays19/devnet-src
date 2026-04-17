@@ -11,14 +11,14 @@ m = manager.connect(
     device_params={'name': 'iosxe'}
 )
 
-# Define the loopback configuration XML
-netconf_loopback = """
+# XML for the duplicate IP test (Loopback 2 with IP 10.1.1.1)
+netconf_newloop = """
 <config xmlns:xc="urn:ietf:params:xml:ns:netconf:base:1.0" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
     <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
         <interface>
             <Loopback>
-                <name>1</name>
-                <description>My first NETCONF loopback</description>
+                <name>2</name>
+                <description>My second NETCONF loopback</description>
                 <ip>
                     <address>
                         <primary>
@@ -34,16 +34,11 @@ netconf_loopback = """
 """
 
 try:
-    # Send the configuration and store the results
-    netconf_reply = m.edit_config(target="running", config=netconf_loopback )
-
-    # Print the prettified XML response
-    print("NETCONF Reply for Loopback Configuration:")
-    print(xml.dom.minidom.parseString(netconf_reply.xml).toprettyxml())
-
+    # Send the configuration (this is expected to raise an error )
+    netconf_reply = m.edit_config(target="running", config=netconf_newloop)
 except Exception as e:
+    # Print the error as per lab instructions
     print(f"An error occurred: {e}")
-
 finally:
-    # Gracefully close the session
+    # Close the session
     m.close_session()
