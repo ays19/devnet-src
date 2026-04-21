@@ -1,4 +1,5 @@
 𝘿𝙚𝙫𝙉𝙚𝙩 𝙎𝙤𝙪𝙧𝙘𝙚 𝘾𝙤𝙙𝙚 & 𝙉𝙚𝙩𝙬𝙤𝙧𝙠 𝘼𝙪𝙩𝙤𝙢𝙖𝙩𝙞𝙤𝙣 𝙇𝙖𝙗𝙨
+
 This repository contains source code, scripts, and configuration files developed for Cisco DevNet Associate (DEVASC) labs and network automation workflows. It focuses on programmatically managing network infrastructure using Python, REST APIs, and modern automation tools.
 
 📁 𝗥𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝘆 𝗦𝘁𝗿𝘂𝗰𝘁𝘂𝗿𝗲
@@ -30,6 +31,7 @@ restconf: Scripts for managing network resources via the RESTCONF protocol, such
 sample-app: A demonstration application, including Dockerfiles for containerization and deployment testing.
 
 📝 𝗡𝗼𝘁𝗲𝘀
+
 Most scripts are designed to be run against Cisco DevNet Always-On or Reserved sandboxes.
 
 Ensure your Ubuntu environment has net-tools and openssh-client installed for full functionality.
