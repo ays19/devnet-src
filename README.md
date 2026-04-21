@@ -39,3 +39,7 @@ Ensure your Ubuntu environment has net-tools and openssh-client installed for fu
 security: Resources and scripts dedicated to network security updates and hardening configurations.
 
 unittest: Python unit tests designed to validate code logic and perform bug fixes across the repository's modules.
+
+🧑‍💻  𝗔𝘂𝘁𝗵𝗼𝗿
+
+**ays19** — Network automation learner working through the Cisco DevNet Associate curriculum.
